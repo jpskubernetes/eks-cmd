@@ -1,6 +1,6 @@
 # EKS (Elastic Kubernetes Service)
 
-`eksctl` is a powerful CLI tool for managing Amazon EKS (Elastic Kubernetes Service) clusters. 
+`eksctl` is a powerful CLI tool for managing Amazon EKS (Elastic Kubernetes Service) clusters.
 
 It simplifies the process of creating, managing, and deleting EKS clusters and their associated resources.
 
@@ -15,10 +15,11 @@ eksctl create cluster \
   --nodes-max 4 \
   --managed
 ```
+
 Here’s what each option does:
 
 - `--name my-cluster`: Name of the cluster.
---region us-west-2: AWS region where the cluster will be created.
+  --region us-west-2: AWS region where the cluster will be created.
 
 - `--nodes 3`: Initial number of nodes in the node group.
 
@@ -27,3 +28,11 @@ Here’s what each option does:
 - `--nodes-max 4`: Maximum number of nodes in the node group.
 
 - `--managed`: Use managed node groups (you can omit this if you want unmanaged nodes).
+
+## Verify the Cluster
+
+After the cluster creation process completes, you can verify it by listing the clusters:
+
+```sh
+eksctl get cluster
+```
