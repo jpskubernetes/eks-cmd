@@ -36,3 +36,11 @@ After the cluster creation process completes, you can verify it by listing the c
 ```sh
 eksctl get cluster
 ```
+
+## Delete a Cluster
+
+If you need to delete the cluster, you can use:
+
+```sh
+eksctl delete cluster --name my-cluster --region us-west-2
+```
